@@ -94,11 +94,23 @@ body{
 
 
   /* NFT price and timer*/
-.card .flex-container{
+.price-time-container{
     display: flex;
     justify-content:space-between;
+
     margin: 20px 0;
   }
+
+.price, .time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+.price img, .time img {
+  margin-right: 5px;
+}
 
 .price{
     font-weight: 600;

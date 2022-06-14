@@ -1,36 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --main-bg-color: hsl(217, 54%, 11%);
+    --card-bg-color: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --text-white: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
 
-
-  body{    
+body{    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
 
-    background-color: hsl(217, 54%, 11%);
-    outline: 3px solid green;
+
+    background-color: var(--main-bg-color);
+    /* outline: 3px solid green; */
   }
 
-  .card{
-    width: 300px;
+.card{
+    width: 350px;
     padding: 20px;
+    border-radius: 15px;
 
-    background-color: hsl(216, 50%, 16%);
-    outline: 3px solid salmon;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    color: var(--soft-blue);
+
+    background-color: var(--card-bg-color);
   }
 
-  img{
+.card img{
     max-width: 100%;
+    border-radius: 15px;
+  }
+
+  .card img:hover{
+    position: relative;
+  }
+
+.card .equilibrium {
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 22px;
+
+
+    color: var(--text-white);
+  }
+
+.card .description {
+    margin: 20px 0;   
+    font-weight: 400; 
+  }
+
+.card .flex-container{
+    display: flex;
+    justify-content:space-between;
+    margin: 20px 0;
+  }
+
+.price{
+    font-weight: 600;
+    color: var(--cyan);
+  }
+
+img.avatar {
+    width: 35px;
+    border: 1px solid var(--text-white);
+    border-radius: 35px;
+}
+
+hr{
+   width: 100%;
+   margin: 20px 0;
+
+   color: var(--line-color)
+}
+
+.nft-attribution  {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+span.author-attribution {
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+span.author-name {
+    font-weight: 300;
+    color: var(--text-white);
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+.attribution a {
+    color: hsl(228, 45%, 44%);
   }

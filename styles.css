@@ -12,29 +12,25 @@
   }
 
 
-  body{
+  body{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
     background-color: hsl(217, 54%, 11%);
     outline: 3px solid green;
-    height: 120vh;
-    /* position: relative; */
-  }
-
-  .cont{
-    height: 100vh;
-    outline: 3px solid firebrick;
-  }
-
-  .container-centered{
-    outline: 3px solid rebeccapurple;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .card{
+    width: 300px;
+    padding: 20px;
+
     background-color: hsl(216, 50%, 16%);
-    /* outline: 3px solid salmon; */
-    width: 400px;
-    height: 400px;
+    outline: 3px solid salmon;
+  }
+
+  img{
+    max-width: 100%;
   }

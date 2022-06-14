@@ -59,6 +59,7 @@ body{
   justify-content: center;
   align-items: center;
 
+  background-color: hsl(178, 100%, 50%, 0.5);
   opacity: 0;
 }
 
@@ -71,8 +72,6 @@ body{
 .nft-img-container:hover .img-overlay-container{
   opacity: 1;
   transition: 0.25s;
-
-  background-color: hsl(178, 100%, 50%, 0.5);
 }
 
 
@@ -147,6 +146,19 @@ span.author-attribution {
 span.author-name {
     font-weight: 300;
     color: var(--text-white);
+}
+
+/* Links */
+a {
+  text-decoration-line: none;
+}
+
+a:visited { 
+  color: var(--text-white);
+}
+
+a:hover {
+  color: var(--cyan);
 }
 
 

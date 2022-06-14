@@ -6,6 +6,9 @@
 
   --color-background: #0d1a2d;
   --color-card-background: #15273f;
+
+  --color-shadow-first: #0c1729;
+  --color-shadow-second: #0C192C;
 }
 
 * {
@@ -36,10 +39,12 @@ body {
   top: 50%;
 
   transform: translate(-50%, -50%);
+
+  box-shadow: 0px 8px 0px 16px var(--color-shadow-first), 0px 8px 8px 32px var(--color-shadow-second);
 }
 
 .card-img-wrap {
-    position: relative;
+  position: relative;
   width: 279px;
   height: 279px;
 
@@ -59,8 +64,8 @@ body {
   top: 0;
 }
 
+/* link:hover */
 .card-img-wrap:hover.card-img-wrap::after {
-
   background-color: var(--color-accent-opacity);
   background-image: url(./images/icon-view.svg);
   background-repeat: no-repeat;

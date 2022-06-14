@@ -36,6 +36,7 @@ body{
     font-size: 18px;
     color: var(--soft-blue);
 
+    box-shadow: 0px 0px 30px black;
     background-color: var(--card-bg-color);
   }
 
@@ -44,12 +45,6 @@ body{
 .nft-img-container {
   position: relative;
 }
-
-.nft-img{
-  display: block;  
-  max-width: 100%;
-  border-radius: 10px;    
-  }
 
 .img-overlay-container {
   position: absolute;
@@ -66,6 +61,12 @@ body{
 
   opacity: 0;
 }
+
+.nft-img{
+  display: block;  
+  max-width: 100%;
+  border-radius: 10px;    
+  }
 
 .nft-img-container:hover .img-overlay-container{
   opacity: 1;
@@ -139,7 +140,7 @@ span.author-name {
 
 /* Challange attribution */
 .attribution {
-  margin: 10px 0;
+  margin: 20px 0;
     font-size: 11px;
     text-align: center;
   }
